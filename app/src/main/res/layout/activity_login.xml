@@ -34,7 +34,7 @@
             android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="50dp"
             android:textAlignment="center"
-            android:background="@drawable/custom_input"
+            android:background="@drawable/login_input"
             android:hint="e-mail"/>
 
         <EditText
@@ -43,7 +43,7 @@
             android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="50dp"
             android:textAlignment="center"
-            android:background="@drawable/custom_input"
+            android:background="@drawable/login_input"
             android:inputType="textPassword"
             android:hint="senha"/>
 

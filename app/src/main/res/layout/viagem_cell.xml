@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/botao_viagem"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/cellTitle"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:text="Teste"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/cellTitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="40sp"-->
+<!--        style="@style/viagemButton"-->
+<!--        android:text="Titulo"-->
+<!--        android:textStyle="bold"-->
+<!--        android:focusable="false"-->
+<!--        android:focusableInTouchMode="false"/>-->
+
+</LinearLayout>

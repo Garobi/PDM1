@@ -6,4 +6,8 @@
     <color name="BackgroundGreen">#FF7ed348</color>
     <color name="LoginButton">#FF26b170</color>
     <color name="RegisterClick">#FF01377d</color>
+    <color name="textGreen">#FF26B170</color>
+    <color name="textBlue">#FF01377D</color>
+    <color name="invisible">#00000000</color>
+    <color name="botaoViagem">#FF009DD1</color>
 </resources>

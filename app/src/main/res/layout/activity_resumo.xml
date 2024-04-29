@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Titulo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/botaoViagem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESTINO"/>
+            <TextView
+                android:id="@+id/resumoDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESTINO"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/botaoViagem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIAJANTES"/>
+            <TextView
+                android:id="@+id/resumoViajantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIAJANTES"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/botaoViagem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DURAÇÃO VIAGEM"/>
+            <TextView
+                android:id="@+id/resumoDuracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DURAÇÃO VIAGEM"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/botaoViagem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTO TOTAL"/>
+            <TextView
+                android:id="@+id/resumoCustoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTO TOTAL"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/botaoViagem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTO P/ PESSOA"/>
+            <TextView
+                android:id="@+id/resumoCustoPessoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTO P/ PESSOA"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
