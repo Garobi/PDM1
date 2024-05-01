@@ -7,7 +7,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.pdm1"
+        applicationId "com.example.m1"
         minSdk 34
         targetSdk 34
         versionCode 1
