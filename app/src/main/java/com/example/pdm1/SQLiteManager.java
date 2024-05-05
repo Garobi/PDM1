@@ -28,6 +28,32 @@ public class SQLiteManager extends SQLiteOpenHelper {
     private static final String TITLE_FIELD = "title";
     private static final String DELETED_FIELD = "deleted";
 
+    //Veiculo
+    private static final String TOTAL_KM_VEICULO_FIELD = "total_km_veiculo";
+    private static final String MEDIA_KMPL_VEICULO_FIELD = "media_kmpl_veiculo";
+    private static final String CUSTO_MEDIO_VEICULO_FIELD = "custo_medio_veiculo";
+    private static final String TOTAL_VEICULOS_FIELD = "total_veiculos";
+    private static final String ADICIONAR_VEICULO_FIELD = "adicionar_veiculo";
+
+    //Tarifa
+    private static final String CUSTO_ESTIMADO_PESSOA_TARIFA_FIELD = "custo_estimado_pessoa_tarifa";
+    private static final String ALUGUEL_VEICULO_TARIFA_FIELD = "aluguel_veiculo_tarifa";
+    private static final String ADICIONAR_TARIFA_FIELD = "adicionar_tarifa";
+
+    //Refeicoes
+    private static final String CUSTO_ESTIMADO_REFEICAO_FIELD = "custo_estimado_refeicao";
+    private static final String REFEICOES_POR_DIA_FIELD = "refeicoes_por_dia";
+    private static final String ADICIONAR_REFEICOES_FIELD = "adicionar_refeicoes";
+
+    //Hospedagens
+    private static final String CUSTO_MEDIO_NOITE_HOSPEDAGEM_FIELD = "custo_medio_noite_hospedagem";
+    private static final String TOTAL_NOITES_HOSPEDAGEM_FIELD = "total_noites_hospedagem";
+    private static final String TOTAL_QUARTOS_HOSPEDAGEM_FIELD = "total_quartos_hospedagem";
+    private static final String ADICIONAR_HOSPEDAGEM_FIELD = "adicionar_hospedagem";
+
+
+
+
     private static final DateFormat dateformat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
     public SQLiteManager(Context context) {
@@ -61,7 +87,20 @@ public class SQLiteManager extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        StringBuilder sql;
+        sql = new StringBuilder()
+                .append("CREATE TABLE ")
+                .append(TABLE_NAME)
+                .append("(")
+                .append(COUNTER)
+                .append(" INTEGER PRIMARY KEY AUTOINCREMENT, ")
+                .append(ID_FIELD)
+                .append(" TEXT, ")
+                .append(TITLE_FIELD)
+                .append(" TEXT, ")
+                .append(DELETED_FIELD)
+                .append(" TEXT)");
+        db.execSQL(sql.toString());
     }
 
     public void addViagemToDatabase(Viagem viagem){

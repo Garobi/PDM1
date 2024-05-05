@@ -866,7 +866,7 @@
                                     android:id="@+id/diversosdetalhes"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:visibility="gone"
+                                    android:visibility="visible"
                                     android:orientation="vertical">
                                     <LinearLayout
                                         android:layout_width="match_parent"
