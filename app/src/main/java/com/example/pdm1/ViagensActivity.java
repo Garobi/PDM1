@@ -60,7 +60,11 @@ public class ViagensActivity extends AppCompatActivity {
 
     private void loadFromDBToMemory() {
         SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(this);
-        sqLiteManager.populateViagemListArray();
+        try {
+            sqLiteManager.populateViagemListArray();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     private void setViagemAdapter() {
