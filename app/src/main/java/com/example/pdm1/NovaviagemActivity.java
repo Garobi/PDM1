@@ -40,14 +40,14 @@ public class NovaviagemActivity extends AppCompatActivity {
         iniciaDadosHospedagem();
 
         //Atualiza os dados do valor total quando um dos outros valores são modificados
-        atualizaDadosModificadosVeiculos();
+        atualizaDadosModificados();
 
 
         initWidget();
         checkForEditViagem();
     }
 
-    private void atualizaDadosModificadosVeiculos() {
+    private void atualizaDadosModificados() {
         TextWatcher gasolinaTextWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

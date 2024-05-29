@@ -51,9 +51,13 @@ public class ViagensActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Viagem selectedViagem = (Viagem) viagemListView.getItemAtPosition(position);
-                Intent editViagemIntent = new Intent(getApplicationContext(), NovaviagemActivity.class);
-                editViagemIntent.putExtra(Viagem.VIAGEM_EDIT_EXTRA, selectedViagem.getId());
-                startActivity(editViagemIntent);
+//                Intent editViagemIntent = new Intent(getApplicationContext(), NovaviagemActivity.class);
+//                editViagemIntent.putExtra(Viagem.VIAGEM_EDIT_EXTRA, selectedViagem.getId());
+//                startActivity(editViagemIntent);
+
+                Intent mostraViagemIntent = new Intent(getApplicationContext(), ResumoActivity.class);
+                mostraViagemIntent.putExtra(Viagem.VIAGEM_EDIT_EXTRA, selectedViagem.getId());
+                startActivity(mostraViagemIntent);
             }
         });
     }
